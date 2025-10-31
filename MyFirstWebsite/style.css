@@ -1,0 +1,48 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2821
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs26 \cf0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 body \{\
+  font-family: 'Georgia', serif;\
+  background-color: #f0f8ff;\
+  margin: 20px;\
+  padding: 20px;\
+\}\
+\
+nav ul \{\
+  list-style-type: none;\
+  padding: 0;\
+\}\
+\
+nav li \{\
+  display: inline;\
+  margin-right: 15px;\
+\}\
+\
+h1 \{\
+  color: #2c3e50;\
+\}\
+\
+h2 \{\
+  color: #34495e;\
+\}\
+\
+img \{\
+  max-width: 300px;\
+  margin: 10px;\
+\}\
+\
+p \{\
+  line-height: 1.6;\
+\}\
+\
+.unique-layout \{\
+  display: flex;\
+  gap: 20px;\
+\}\
+}
