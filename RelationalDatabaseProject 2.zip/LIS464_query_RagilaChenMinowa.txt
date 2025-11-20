@@ -1,0 +1,69 @@
+
+LIS464_query_Ragila.txt
+Author: Sharath Ragila, Qixuan Chen, Olivia Minowa
+Course: LIS 464 Relational Database Project
+Description: Required 7 SQL queries demonstrating database functionality.
+
+
+1. List all players and their corresponding team names
+
+SELECT p.PlayerName, t.TeamName
+FROM Players p
+JOIN Teams t ON p.TeamId = t.TeamId;
+
+
+2. Show all games with the sport name, home and away teams, and scores
+
+SELECT g.GameId, s.SportName, ht.TeamName AS HomeTeam, at.TeamName AS AwayTeam,
+       g.HomeFinalScore, g.AwayFinalScore, g.GameStatus
+FROM Games g
+JOIN Sports s ON g.SportId = s.SportId
+JOIN Teams ht ON g.HomeTeamId = ht.TeamId
+JOIN Teams at ON g.AwayTeamId = at.TeamId;
+
+
+3. Display average player ratings for each player
+
+SELECT p.PlayerName, ROUND(AVG(r.RatingScore), 2) AS AverageRating
+FROM Ratings r
+JOIN Players p ON r.PlayerId = p.PlayerId
+GROUP BY p.PlayerName
+ORDER BY AverageRating DESC;
+
+
+4. Find comments associated with each game (show user and game info)
+
+SELECT g.GameId, g.GameDate, u.UserUsername, c.CommentContent, c.CommentTime
+FROM Comments c
+JOIN Users u ON c.UserId = u.UserId
+JOIN Games g ON c.GameId = g.GameId
+ORDER BY g.GameDate DESC;
+
+
+5. Show total stats recorded per game (sum of stat values)
+
+SELECT g.GameId, COUNT(s.StatId) AS TotalStatEntries, SUM(s.StatTypeValue) AS TotalValue
+FROM Games g
+JOIN Stats s ON g.GameId = s.GameId
+GROUP BY g.GameId;
+
+
+6. Display all teams with their sport, coach, and number of players
+
+SELECT s.SportName, t.TeamName, c.CoachName, COUNT(p.PlayerId) AS PlayerCount
+FROM Teams t
+JOIN Sports s ON t.SportId = s.SportId
+LEFT JOIN Coaches c ON t.TeamId = c.TeamId
+LEFT JOIN Players p ON t.TeamId = p.TeamId
+GROUP BY s.SportName, t.TeamName, c.CoachName;
+
+
+7. Find top 5 most recent comments with user and related player/game info
+
+SELECT u.UserUsername, c.CommentContent, c.CommentTime, p.PlayerName, g.GameId
+FROM Comments c
+JOIN Users u ON c.UserId = u.UserId
+LEFT JOIN Players p ON c.PlayerId = p.PlayerId
+LEFT JOIN Games g ON c.GameId = g.GameId
+ORDER BY c.CommentTime DESC
+LIMIT 5;
