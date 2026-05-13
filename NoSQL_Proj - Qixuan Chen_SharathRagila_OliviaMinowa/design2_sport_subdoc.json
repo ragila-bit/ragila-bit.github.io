@@ -1,0 +1,30 @@
+[
+  {
+    "_id": 1,
+    "SportName": "Basketball",
+    "LeagueStructure": {
+      "GoverningBody": "NCAA",
+      "PrimaryDivision": "Division I",
+      "SeasonFormat": "Winter",
+      "ChampionshipType": "March Madness"
+    },
+    "EquipmentRules": {
+      "BallSize": "29.5 inches",
+      "RimHeight": "10 feet"
+    }
+  },
+  {
+    "_id": 2,
+    "SportName": "Football",
+    "LeagueStructure": {
+      "GoverningBody": "NCAA",
+      "PrimaryDivision": "FBS (Football Bowl Subdivision)",
+      "SeasonFormat": "Fall",
+      "ChampionshipType": "CFP Playoffs"
+    },
+    "EquipmentRules": {
+      "BallSize": "Official Collegiate Size",
+      "FieldLength": "100 yards"
+    }
+  }
+]

@@ -1,0 +1,85 @@
+{
+  "$jsonSchema": {
+    "bsonType": "object",
+    "title": "Player Performance Schema",
+    "description": "Validation rules for player documents containing personal details and nested statistical records.",
+    "required": [
+      "PlayerName",
+      "PlayerJerseyNumber",
+      "PlayerPosition",
+      "teamId",
+      "stats"
+    ],
+    "properties": {
+      "_id": {
+        "bsonType": "int",
+        "description": "Unique identifier for the player."
+      },
+      "teamId": {
+        "bsonType": "int",
+        "description": "Reference ID for the team the player belongs to."
+      },
+      "PlayerName": {
+        "bsonType": "string",
+        "description": "Full name of the player."
+      },
+      "PlayerJerseyNumber": {
+        "bsonType": "int",
+        "minimum": 0,
+        "maximum": 99,
+        "description": "The number on the player's jersey. Must be between 0 and 99."
+      },
+      "PlayerPosition": {
+        "enum": ["Guard", "Forward", "Center"],
+        "description": "The court position of the player. Limited to standard basketball positions."
+      },
+      "PlayerHeight": {
+        "bsonType": "string",
+        "description": "Height formatted as feet'inches."
+      },
+      "PlayerWeight": {
+        "bsonType": "int",
+        "minimum": 100,
+        "description": "Weight of the player in pounds."
+      },
+      "PlayerStudentYear": {
+        "bsonType": "string",
+        "description": "Academic year of the player (e.g., Freshman, Senior)."
+      },
+      "PlayerGender": {
+        "bsonType": "string",
+        "description": "Gender of the player."
+      },
+      "stats": {
+        "bsonType": "array",
+        "description": "List of performance statistics per season.",
+        "minItems": 1,
+        "items": {
+          "bsonType": "object",
+          "required": ["Season", "PointsPerGame"],
+          "properties": {
+            "Season": {
+              "bsonType": "string",
+              "description": "The specific academic year of the stats (e.g., 2023-2024)."
+            },
+            "PointsPerGame": {
+              "bsonType": "double",
+              "minimum": 0,
+              "description": "Average points scored per game. Cannot be negative."
+            },
+            "AssistsPerGame": {
+              "bsonType": "double",
+              "minimum": 0,
+              "description": "Average assists per game. Cannot be negative."
+            },
+            "ReboundsPerGame": {
+              "bsonType": "double",
+              "minimum": 0,
+              "description": "Average rebounds per game. Cannot be negative."
+            }
+          }
+        }
+      }
+    }
+  }
+}

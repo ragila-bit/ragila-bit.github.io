@@ -1,0 +1,102 @@
+[
+  {
+    "_id": 1001,
+    "teamId": 101,
+    "PlayerName": "Chucky Hepburn",
+    "PlayerJerseyNumber": 23,
+    "PlayerPosition": "Guard",
+    "PlayerHeight": "6'2",
+    "PlayerWeight": 205,
+    "PlayerStudentYear": "Junior",
+    "PlayerGender": "M",
+    "stats": [
+      {
+        "Season": "2022-2023",
+        "PointsPerGame": 12.2,
+        "AssistsPerGame": 2.8,
+        "ReboundsPerGame": 2.8
+      },
+      {
+        "Season": "2023-2024",
+        "PointsPerGame": 11.5,
+        "AssistsPerGame": 3.9,
+        "ReboundsPerGame": 3.3
+      }
+    ]
+  },
+  {
+    "_id": 1002,
+    "teamId": 101,
+    "PlayerName": "Steven Crowl",
+    "PlayerJerseyNumber": 22,
+    "PlayerPosition": "Forward",
+    "PlayerHeight": "7'0",
+    "PlayerWeight": 247,
+    "PlayerStudentYear": "Junior",
+    "PlayerGender": "M",
+    "stats": [
+      {
+        "Season": "2022-2023",
+        "PointsPerGame": 12.1,
+        "AssistsPerGame": 2.5,
+        "ReboundsPerGame": 6.9
+      },
+      {
+        "Season": "2023-2024",
+        "PointsPerGame": 11.2,
+        "AssistsPerGame": 2.1,
+        "ReboundsPerGame": 7.3
+      }
+    ]
+  },
+  {
+    "_id": 2001,
+    "teamId": 102,
+    "PlayerName": "Braden Smith",
+    "PlayerJerseyNumber": 3,
+    "PlayerPosition": "Guard",
+    "PlayerHeight": "6'0",
+    "PlayerWeight": 175,
+    "PlayerStudentYear": "Sophomore",
+    "PlayerGender": "M",
+    "stats": [
+      {
+        "Season": "2022-2023",
+        "PointsPerGame": 9.7,
+        "AssistsPerGame": 4.4,
+        "ReboundsPerGame": 4.2
+      },
+      {
+        "Season": "2023-2024",
+        "PointsPerGame": 12.1,
+        "AssistsPerGame": 7.5,
+        "ReboundsPerGame": 5.8
+      }
+    ]
+  },
+  {
+    "_id": 2002,
+    "teamId": 102,
+    "PlayerName": "Fletcher Loyer",
+    "PlayerJerseyNumber": 2,
+    "PlayerPosition": "Guard",
+    "PlayerHeight": "6'4",
+    "PlayerWeight": 180,
+    "PlayerStudentYear": "Sophomore",
+    "PlayerGender": "M",
+    "stats": [
+      {
+        "Season": "2022-2023",
+        "PointsPerGame": 11.1,
+        "AssistsPerGame": 2.4,
+        "ReboundsPerGame": 1.7
+      },
+      {
+        "Season": "2023-2024",
+        "PointsPerGame": 10.3,
+        "AssistsPerGame": 1.7,
+        "ReboundsPerGame": 2.1
+      }
+    ]
+  }
+]

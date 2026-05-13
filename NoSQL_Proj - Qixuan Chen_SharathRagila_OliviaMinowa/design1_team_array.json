@@ -1,0 +1,32 @@
+[
+  {
+    "_id": 101,
+    "TeamName": "Wisconsin Badgers",
+    "TeamFoundedYear": 1848,
+    "TeamSchool": "University of Wisconsin-Madison",
+    "TeamDivision": "NCAA Division I",
+    "SportId": 1,
+    "CoachNames": [
+      "Greg Gard",
+      "Joe Krabbenhoft",
+      "Dean Oliver",
+      "Sharif Chambliss"
+    ],
+    "Players": [1001, 1002]
+  },
+  {
+    "_id": 102,
+    "TeamName": "Purdue Boilermakers",
+    "TeamFoundedYear": 1869,
+    "TeamSchool": "Purdue University",
+    "TeamDivision": "NCAA Division I",
+    "SportId": 1,
+    "CoachNames": [
+      "Matt Painter",
+      "Brandon Brantley",
+      "Terry Johnson",
+      "Paul Lusk"
+    ],
+    "Players": [2001, 2002]
+  }
+]

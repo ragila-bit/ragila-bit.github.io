@@ -1,0 +1,55 @@
+/* menu style rules:*/
+
+body
+{
+  font-family: "Arial";
+  color: black;
+  max-width: 37.5rem;
+}
+
+h1
+{
+  color: red;
+}
+
+h2
+{
+  color: black;
+}
+
+li
+{
+  font-family: "Courier New";
+  color: red;
+  font-size: large;
+  font-weight: bold;
+}
+
+a:visited
+{
+  color: red;
+}
+
+header
+{
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  margin-bottom: 1.5rem;
+}
+
+nav ul
+{
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+.menu-items li h3
+{
+  color: red;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 0;
+}
